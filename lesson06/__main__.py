@@ -10,6 +10,8 @@ from lesson06.library_classes import Library, Author, Book
 
 
 def create_menu(library, data):
+
+
     menu_dict = dict()
     menu_dict[1]= lambda : library.add_book(data.get_book(),1);
     menu_dict[2]= lambda : library.delete_book(data.get_book());
